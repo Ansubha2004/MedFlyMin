@@ -8,8 +8,8 @@ export default function Button({ content, theme, specification, additionalcss}) 
 
     const designs={
         'themeblack': 'bg-black text-white shadow-[2px_4px_16px_3px_rgba(0,0,0,0.28)]',
-        'themeorange': 'bg-[#F2630A] text-white shadow-[7px_0px_25px_0px_rgba(0,0,0,0.25)]',
-        'themewhite': 'bg-white text-black shadow-[5px_20px_25px_0px_rgba(0,0,0,0.25)]',
+        'themeorange': 'bg-[#F2630A] text-white shadow-[3px_5px_11.5px_2px_rgba(0,0,0,0.40)]',
+        'themewhite': 'bg-white/50 text-black shadow-[15px_20px_20px_0px_rgba(0,0,0,0.25)] backdrop-blur-[3px]',
     }
 
     const specifications={
