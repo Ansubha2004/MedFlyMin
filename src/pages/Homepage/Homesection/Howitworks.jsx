@@ -7,7 +7,7 @@ import Button from '../../../Components/Button.jsx';
 export default function Howitworks() {
   return (
     <>
-        <div className="w-full h-auto relative flex flex-col justify-center items-center overflow-hidden">
+        <div id="workflow" className="w-full h-auto relative flex flex-col justify-center items-center overflow-hidden">
         
             <div id="Heading" className="w-full h-auto flex flex-col justify-center items-center">
                 <p className="leading-snug text-[52px] font-[700]">How It <span className="text-[#F2630A]">Works</span></p>
@@ -23,7 +23,6 @@ export default function Howitworks() {
             <p className="text-[36px] font-[600] z-[1]">Need Medicines Now?</p>
             <br/>
             <Button content="Place Your Order Now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 z-[1]"/>
-            <br/>
             <br/>
             <br/>
         </div>

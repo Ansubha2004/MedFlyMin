@@ -8,7 +8,7 @@ export default function Advantage() {
 
   return (
     <>
-      <div className="w-full h-auto relative flex flex-col justify-center items-center">
+      <div id="about" className="w-full h-auto relative flex flex-col justify-center items-center">
         
         <div id="Heading" className="w-full h-auto flex flex-col justify-center items-center">
             <p className="leading-snug text-[52px] font-[700]">The <span className="text-[#F2630A]">MedFlyMin</span> Advantage</p>
