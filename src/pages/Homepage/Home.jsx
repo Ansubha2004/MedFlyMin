@@ -1,6 +1,4 @@
 import React from 'react'
-import clsx from 'clsx';
-import {Link} from 'react-router-dom';
 import Navbar from './Homesection/Navbar.jsx';
 import Welcomepage from './Homesection/Welcomepage.jsx';
 import Advantage from './Homesection/Advantage.jsx';

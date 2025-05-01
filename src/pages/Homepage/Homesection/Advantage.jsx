@@ -1,6 +1,6 @@
 import React from 'react'
 import clsx from 'clsx';
-import whitetickicon from '../../../assets/designcomponents/whitetickicon.png'
+import whitetickicon from '../../../assets/images/whitetickicon.png'
 
 export default function Advantage() {
 

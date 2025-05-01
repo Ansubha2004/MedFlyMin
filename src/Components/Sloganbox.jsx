@@ -1,9 +1,9 @@
 import React from 'react'
 import clsx from 'clsx';
-import crossicon from '../assets/designcomponents/crossicon.png';
-import deliveryicon2 from '../assets/designcomponents/deliveryicon2.png';
-import dollaricon  from '../assets/designcomponents/dollaricon.png';
-import mobileicon from '../assets/designcomponents/mobileicon.png';
+import crossicon from '../assets/images/crossicon.png';
+import deliveryicon2 from '../assets/images/deliveryicon2.png';
+import dollaricon  from '../assets/images/dollaricon.png';
+import mobileicon from '../assets/images/mobileicon.png';
 
 export default function Sloganbox({extracss,heading,body,page,index}) {
 

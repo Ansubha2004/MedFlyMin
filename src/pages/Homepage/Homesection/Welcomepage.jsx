@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 import background1 from '../../../assets/designcomponents/background1.png'
 import blurshade1 from '../../../assets/designcomponents/blurshade1.png'
 import Button from '../../../Components/Button.jsx'
-import tickicon from '../../../assets/designcomponents/tickicon.png'
-import deliveryicon from '../../../assets/designcomponents/deliveryicon.png'
-import locationicon from '../../../assets/designcomponents/locationicon.png'
+import tickicon from '../../../assets/images/tickicon.png'
+import deliveryicon from '../../../assets/images/deliveryicon.png'
+import locationicon from '../../../assets/images/locationicon.png'
 
 
 
@@ -32,8 +32,8 @@ export default function Welcomepage() {
                     <br/><br/>
                     <p className="text-[32px] leading-[36px] text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
                     <br/><br/>
-                    <Button content="Log In to order now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 "/>
-                    <Button content="Register Now →" specification="s2" theme="themewhite" additionalcss="border-solid border-black border-[1px]"/>
+                    <Button content="Log In to order now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 " link="/login"/>
+                    <Button content="Register Now →" specification="s2" theme="themewhite" additionalcss="border-solid border-black border-[1px]" link="/register"/>
                     <br/>
                     <br/>
                     <br/>
