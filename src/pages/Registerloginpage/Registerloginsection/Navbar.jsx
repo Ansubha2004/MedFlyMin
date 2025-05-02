@@ -19,12 +19,15 @@ export default function Navbar({mode}) {
       window.location.reload();
     }
 
+    
+    
+
   return (
     <div className=" font-[Inter] w-screen min-h-auto flex justify-between items-center box-border pl-[25px] pr-[67px] absolute z-[10]">
       <img src="/logo.png" className="h-[75px] sm:mx-[25px] sm:my-[20px] sm:h-[94px]" />
       <ul className="text-[25px] font-[Inter] font-[500] space-x-[44px] flex items-center justify-center">
         <Link onClick={reload} className={clsx(hoverbuttons,"font-bold")} to={`/${mode=="register"?'login':'register'}`}>{mode=="register"?"Login":"Sign Up"}</Link>
-        <Link className={clsx(hoverbuttons)} to="/#contact">Contact Us</Link>
+        <a  className={clsx(hoverbuttons)} href="/#contactus" >Contact Us</a>
       </ul>
     </div>
   )

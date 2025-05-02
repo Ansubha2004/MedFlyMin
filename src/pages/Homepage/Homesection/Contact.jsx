@@ -1,10 +1,17 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
+import scrolltoview from '../../../hooks/scrolltoview.jsx';
+
 
 
 export default function Contact() {
+
+  //javascript
+  scrolltoview();
+
   return (
     <>
-        <div id="contact" className="w-full h-auto relative flex flex-col justify-center items-center overflow-hidden">
+        <div id="contactus" className="w-full h-auto relative flex flex-col justify-center items-center overflow-hidden">
         <br/>
             <br/>
             <div id="Heading" className="w-full h-auto flex flex-col justify-center items-center">

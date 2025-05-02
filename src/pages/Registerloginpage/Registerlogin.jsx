@@ -1,26 +1,16 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import Navbar from './Registerloginsection/Navbar.jsx';
 import Registrationloginpage from './Registerloginsection/Registrationloginpage.jsx';
 import background2 from '../../assets/designcomponents/background2.png';
 import blurshade3 from '../../assets/designcomponents/blurshade3.png';
-import {useLocation} from 'react-router-dom';
+import {loginregistermode} from '../../hooks/loginregistermode.jsx';
+
 
 export default function Register() {
 
   //js
-  const location=useLocation();
-  const [mode,setmode]=useState("");
-  useEffect(()=>{
-    if(location.pathname=="/register")
-      {
-        setmode("register");
-      }
-      else
-      {
-        setmode("login");
-      }
-    
-  },[])
+  const mode=loginregistermode();
+  
   return (
     <>
         <Navbar mode={mode}/>

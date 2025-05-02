@@ -8,6 +8,7 @@ import verifypasswordicon from '../../../assets/images/verifypasswordicon.png';
 import Button from '../../../Components/Button.jsx';
 import oricon from '../../../assets/images/oricon.png';
 import Google from '../../../assets/images/google.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Registrationloginpage({mode}) {
@@ -26,7 +27,7 @@ export default function Registrationloginpage({mode}) {
         <br/>
         <br/>
         <p className="text-[40px] font-[700] ">{mode=='register'?"Create Your Account":"Log In to your Account"}</p>
-        <p className="text-[24px] font-[600]">or <a className="text-[#F2630A]" href={mode=="register"?'/login':'/register'}>{mode=="register"?"Login to your existing account":"Create a new Account"}</a></p>
+        <p className="text-[24px] font-[600]">or <Link className="text-[#F2630A]" to={mode=="register"?'/login':'/register'}>{mode=="register"?"Login to your existing account":"Create a new Account"}</Link></p>
         <div className="w-[500px] h-auto border-box p-[30px] bg-[#FFFFFF] rounded-[20px] shadow-[0px_0px_35px_0px_rgba(0,0,0,0.35)] transfrom scale-[0.9]">
           {
             mode=="register"?
@@ -37,7 +38,7 @@ export default function Registrationloginpage({mode}) {
               <Inputbox label="Confirm Password" id="Confirmpassword" type="password" placeholder="********" icon={verifypasswordicon} mode="register"/>
               <label htmlFor="checkbox" className="flex justify-between w-full items-center font-[Inter] text-[18px] my-[15px]">
                 <div className="flex items-center">
-                <input type="checkbox" id="checkbox" className={clsx(common)}/>
+                <input type="checkbox" id="checkbox" className={clsx(common)} required/>
                 Remember Me
                 </div>
                 <a href="" className="text-[#F2630A] active:scale-[0.95] transition-all duration-200 ease-out">Forgot Your Password?</a>
@@ -53,7 +54,7 @@ export default function Registrationloginpage({mode}) {
                 <Inputbox label="Email Address" id="mail" icon={emailicon} type="text" placeholder="eg: name@gmail.com" mode="login"/>
                 <Inputbox label="Enter Password" id="password" icon={passwordicon} type="text" placeholder="********" mode="login"/>
                 <label htmlFor="checkbox" className="flex items-center font-[Inter] text-[18px] my-[15px]">
-                  <input type="checkbox" id="checkbox" className={clsx(common)}/>
+                  <input type="checkbox" id="checkbox" className={clsx(common)} required/>
                   <p>I agree to the <span className="text-orange-500">Terms of Services</span> and <span className="text-orange-500">Privacy Policy</span></p>
                 </label>
                 <Button content="Log In →" theme="themeorange" specification="s3" additionalcss="active:bg-orange-600 mt-[25px]" link=""/>

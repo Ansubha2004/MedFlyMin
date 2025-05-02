@@ -1,8 +1,12 @@
 import React from 'react'
 import clsx from 'clsx';
 import whitetickicon from '../../../assets/images/whitetickicon.png'
+import scrolltoview from '../../../hooks/scrolltoview.jsx';
 
 export default function Advantage() {
+
+  //javascript
+  scrolltoview()
 
     const text=["Faster delivery times","Support for local businesses","Better customer satisfaction","Increased pharmacy revenue"];
 
