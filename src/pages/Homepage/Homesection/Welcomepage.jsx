@@ -28,12 +28,11 @@ export default function Welcomepage() {
             <div className="h-auto w-full relative z-[1]  pt-[134px] box-border px-[80px]">
                 <div className="max-w-[550px] relative z-[3]">
                     <br/><br/>
-                    <p className="leading-snug text-[52px] font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Hours, Not Days</p>
+                    <p className="leading-snug text-[52px] font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Days</p>
                     <br/><br/>
                     <p className="text-[32px] leading-[36px] text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
                     <br/><br/>
-                    <Button content="Log In to order now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 " link="/login"/>
-                    <Button content="Register Now →" specification="s2" theme="themewhite" additionalcss="border-solid border-black border-[1px]" link="/register"/>
+                    <Button content="Order now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 " link="/login"/>
                     <br/>
                     <br/>
                     <br/>
