@@ -21,7 +21,7 @@ export default function Solution() {
             <div className="w-[100%] flex flex-wrap justify-center items-center ">
                 {
                     [0,1,2,3].map((box,index)=>(
-                        <div key={index} className="w-[45%] flex justify-center">
+                        <div key={index} className="w-[43%] flex justify-center">
                             <Sloganbox extracss="bg-[#F5F5F5]" heading={heading[index]} body={body[index]} page="solution" index={index}/> 
                         </div>
                     ))

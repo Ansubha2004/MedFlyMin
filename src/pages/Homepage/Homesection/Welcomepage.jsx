@@ -55,7 +55,7 @@ export default function Welcomepage() {
                 <br/>
                 <br/>
                 <br/>
-                <img src={background1} className="h-[730px] w-[990px] absolute z-[2] top-2/15 right-[30px]"/>
+                <img src={background1} className="h-[730px] w-[990px] absolute z-[2] top-2/17 right-[30px]"/>
                 <img src={blurshade1} className="h-[400px] w-[850px] absolute z-[1] top-0 right-2/10"/>
             </div>
         </div>

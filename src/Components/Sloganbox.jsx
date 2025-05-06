@@ -8,7 +8,7 @@ import mobileicon from '../assets/images/mobileicon.png';
 export default function Sloganbox({extracss,heading,body,page,index}) {
 
     //tailwindcss
-    const common='w-[530px] min-h-[170px] rounded-[30px] flex justify-center items-start shadow-[2px_4px_5px_0px_rgba(0,0,0,0.25)] hover:scale-[1.015] transition-all duration-100 ease-in mb-[30px] border-box py-[25px] px-[45px]';
+    const common='w-[530px] min-h-[170px] rounded-[30px] flex justify-center items-start shadow-[2px_4px_5px_0px_rgba(0,0,0,0.25)] hover:scale-[1.015] transition-all duration-100 ease-in mb-[30px] border-box py-[25px] px-[45px] mx-5';
     
     const iconset={
         problem:[deliveryicon2,crossicon,dollaricon,mobileicon],

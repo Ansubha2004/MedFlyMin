@@ -9,9 +9,9 @@ import Contact from './Homesection/Contact.jsx';
 
 export default function Home() {
   return (
-    <>
+    <div className="relative flex flex-col min-h-screen">
         <Navbar/>
-        <main className="relative w-screen h-auto">
+        <main className=" flex-1 w-full max-w-full overflow-x-hidden">
             <Welcomepage/>
             <Advantage/>
             <Howitworks/>
@@ -19,7 +19,6 @@ export default function Home() {
             <Solution/>
             <Contact/>
         </main>
-        
-    </>
+    </div>
   )
 }
