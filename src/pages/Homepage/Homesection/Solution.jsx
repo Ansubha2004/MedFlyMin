@@ -5,7 +5,7 @@ import Sloganbox from '../../../Components/Sloganbox.jsx';
 export default function Solution() {
 
     const heading=["Hyperlocal Model","Fast Deliveries","No Inventory Needed","Fair Commission Model"];
-    const body=["Connecting customers with nearby pharmacies for faster service","Medicines delivered within hours, not days", "Pharmacies use existing stock, eliminating extra inventory costs","Lower, transparent fees that benifit both pharmacies and customers"];
+    const body=["Connecting customers with nearby pharmacies for faster service","Medicines delivered within minutes, not hours", "Pharmacies use existing stock, eliminating extra inventory costs","Lower, transparent fees that benifit both pharmacies and customers"];
 
   return (
     <>
