@@ -32,7 +32,8 @@ export default function Welcomepage() {
                     <br/><br/>
                     <p className="text-[32px] leading-[36px] text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
                     <br/><br/>
-                    <Button content="Order now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 " link="/login"/>
+                    <Button content="Log In to order now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 " link="/login"/>
+                    <Button content="Register Now →" specification="s2" theme="themewhite" additionalcss="border-solid border-black border-[1px]" link="/register"/>
                     <br/>
                     <br/>
                     <br/>
