@@ -28,11 +28,7 @@ export default function Welcomepage() {
             <div className="h-auto w-full relative z-[1]  pt-[134px] box-border px-[80px]">
                 <div className="max-w-[550px] relative z-[3]">
                     <br/><br/>
-<<<<<<< HEAD
-                    <p className="leading-snug text-[52px] font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Days</p>
-=======
                     <p className="leading-snug text-[52px] font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Hourss</p>
->>>>>>> 182e5a9a0a8eced2e4ecc04379b2cba3847ae152
                     <br/><br/>
                     <p className="text-[32px] leading-[36px] text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
                     <br/><br/>
