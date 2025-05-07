@@ -28,7 +28,11 @@ export default function Welcomepage() {
             <div className="h-auto w-full relative z-[1]  pt-[134px] box-border px-[80px]">
                 <div className="max-w-[550px] relative z-[3]">
                     <br/><br/>
+<<<<<<< HEAD
                     <p className="leading-snug text-[52px] font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Days</p>
+=======
+                    <p className="leading-snug text-[52px] font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Hourss</p>
+>>>>>>> 182e5a9a0a8eced2e4ecc04379b2cba3847ae152
                     <br/><br/>
                     <p className="text-[32px] leading-[36px] text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
                     <br/><br/>
@@ -54,7 +58,7 @@ export default function Welcomepage() {
                 <br/>
                 <br/>
                 <br/>
-                <img src={background1} className="h-[730px] w-[990px] absolute z-[2] top-2/15 right-[30px]"/>
+                <img src={background1} className="h-[730px] w-[990px] absolute z-[2] top-2/17 right-[30px]"/>
                 <img src={blurshade1} className="h-[400px] w-[850px] absolute z-[1] top-0 right-2/10"/>
             </div>
         </div>

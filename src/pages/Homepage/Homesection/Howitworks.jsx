@@ -29,7 +29,7 @@ export default function Howitworks() {
             <br/>
             <p className="text-[36px] font-[600] z-[1]">Need Medicines Now?</p>
             <br/>
-            <Button content="Place Your Order Now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 z-[1]"/>
+            <Button content="Place Your Order Now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 z-[1]" link="/orderpage" />
             <br/>
             <br/>
         </div>

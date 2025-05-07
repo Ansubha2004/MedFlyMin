@@ -1,12 +1,25 @@
-body,html{
-  overflow-x:hidden;
-  overscroll-behavior:none;
-  position:relative;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior: none;
 }
-#root{
-  overflow:scroll;
-  position:fixed;
-  height:100vh;
-  width:100vw;
-  user-select:none
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
 }

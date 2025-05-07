@@ -19,10 +19,10 @@ export default function Problem() {
                     <br/>
                     <br/>
             </div>
-            <div className="w-[100%] flex flex-wrap justify-center items-center ">
+            <div className="w-full flex flex-wrap justify-center items-center ">
                 {
                     [0,1,2,3].map((box,index)=>(
-                        <div key={index} className="w-[45%] flex justify-center">
+                        <div key={index} className="w-[43%] flex justify-center">
                             <Sloganbox extracss="bg-white" heading={heading[index]} body={body[index]} page="problem" index={index}/> 
                         </div>
                     ))

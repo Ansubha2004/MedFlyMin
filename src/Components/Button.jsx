@@ -17,9 +17,9 @@ export default function Button({ content, theme, specification, additionalcss,li
     }
 
     const specifications={
-        s1: 'w-[200px] h-[50px] text-[26px] rounded-[16px]',
-        s2: 'w-[380px] h-[70px] text-[26px] rounded-[16px]',
-        s3: 'w-full h-[50px] text-[21px] rounded-[8px] '
+        s1: 'min-w-[200px] h-[50px] text-[24px] rounded-[16px]',
+        s2: 'min-w-[380px] h-[70px] text-[24px] rounded-[16px]',
+        s3: 'min-w-full h-[50px] text-[21px] rounded-[8px] '
     }
 
     //js\
