@@ -11,10 +11,10 @@ export default function Navbar() {
   const hoverbuttons='hover:text-[#F2630A] hover:scale-[1.05] active:scale-[0.95] border-b-[2px] border-transparent hover:border-[#F2630A] transition-all duration-200 ease-out'
 
   return (
-    <nav className="bg-transparent font-[Inter] w-full min-h-auto flex justify-between items-center box-border px-4 sm:px-8 py-2 absolute z-[10] border-b-[1px] border-black/60 ">
+    <nav className="bg-transparent font-[Inter] w-full min-h-auto flex justify-between items-center box-border px-4 sm:px-8 py-2  border-b-[1px] border-black/60 ">
       <span className="flex items-center gap-10">
         <img src="/logo.png" className="h-[75px] sm:h-[84px]" alt="Logo" />
-        <Button content="Add Location" theme="themeorange" specification="s1" additionalcss='hover:opacity-[0.8] duration-100 linear ' icon={locationicon2} iconcss="w-[26px] ml-3" />
+        <Button content="Add Location" theme="themeorange" specification="s1" additionalcss='hover:opacity-[0.8] duration-100 linear text-[24px]' icon={locationicon2} iconcss="w-[26px] ml-3" />
       </span>
       <span className="text-[25px] font-[Inter] flex items-center gap-10">
         <a className={clsx(hoverbuttons)} href="#help">Need Help?</a>

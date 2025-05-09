@@ -12,14 +12,16 @@ export default function Button({ content, theme, specification, additionalcss,li
     const designs={
         'themeblack': 'bg-black text-white shadow-[2px_4px_16px_3px_rgba(0,0,0,0.28)]',
         'themeorange': 'bg-[#F2630A] text-white shadow-[3px_5px_11.5px_2px_rgba(0,0,0,0.40)]',
+        'themeorange2': 'bg-[#F2630A] text-white',
         'themewhite': 'bg-white/50 text-black shadow-[15px_20px_20px_0px_rgba(0,0,0,0.25)] backdrop-blur-[3px]',
         'themewhite2': 'bg-white/50 text-black shadow-[0px_5px_18px_3px_rgba(0,0,0,0.25)] backdrop-blur-[3px]'
     }
 
     const specifications={
-        s1: 'min-w-[200px] h-[50px] text-[24px] rounded-[16px]',
+        s1: 'min-w-[200px] h-[50px]  rounded-[16px]',
         s2: 'min-w-[380px] h-[70px] text-[24px] rounded-[16px]',
-        s3: 'min-w-full h-[50px] text-[21px] rounded-[8px] '
+        s3: 'min-w-full h-[50px] text-[21px] rounded-[8px] ',
+        s4: 'h-[90%] rounded-l-full rounded-r-full w-1/5'
     }
 
     //js\

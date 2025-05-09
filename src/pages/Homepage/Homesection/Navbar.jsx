@@ -16,7 +16,7 @@ export default function Navbar() {
         <a className={clsx(hoverbuttons)} href="#workflow">How it works</a>
         <a className={clsx(hoverbuttons)} href="#contactus">Contact Us</a>
       </ul>
-      <Button content="Order Now" theme="themeblack" specification="s1" additionalcss='hover:opacity-[0.8] duration-100 linear' link="/orderpage" />
+      <Button content="Order Now" theme="themeblack" specification="s1" additionalcss='hover:opacity-[0.8] duration-100 linear text-[24px]' link="/orderpage" />
     </nav>
   )
 }
