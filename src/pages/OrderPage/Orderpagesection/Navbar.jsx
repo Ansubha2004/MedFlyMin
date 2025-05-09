@@ -1,11 +1,38 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Button from '../../../Components/Button.jsx'
 import clsx from 'clsx'
 import locationicon2 from '../../../assets/images/locationicon2.png'
 import cartimage from '../../../assets/images/cartimage.gif'
 import dummyimage from '../../../assets/images/dummyimage.png'
+import { useNavigate } from 'react-router-dom'
+import axios from '../../../hooks/useAxios'
+import { toast } from 'react-toastify'
 
 export default function Navbar() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const navigate = useNavigate();
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleLogout = async () => {
+    try {
+      await axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/auth/logout`);
+      toast.success('Logged out successfully');
+      navigate('/login');
+    } catch (error) {
+      toast.error('Error logging out');
+    }
+  };
 
   //tailwindcss
   const hoverbuttons='hover:text-[#F2630A] hover:scale-[1.05] active:scale-[0.95] border-b-[2px] border-transparent hover:border-[#F2630A] transition-all duration-200 ease-out'
@@ -22,11 +49,25 @@ export default function Navbar() {
           <p className={clsx(hoverbuttons)} >Cart</p>
           <img src={cartimage} className="h-[50px] ml-1 object-contain"  />
         </a>
-          <div className="w-[55px] h-[55px] rounded-[50%] border-transparent border-solid border-[2px] hover:scale-[1.1] hover:border-orange-600 transition-all duration-200 ease-out overflow-hidden active:scale-[0.9]">
-            <img src={dummyimage} className="w-[55px] object-contain"/>
+        <div className="relative" ref={dropdownRef}>
+          <div 
+            className="w-[55px] h-[55px] rounded-[50%] border-transparent border-solid border-[2px] hover:scale-[1.1] hover:border-orange-600 transition-all duration-200 ease-out overflow-hidden active:scale-[0.9] cursor-pointer"
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          >
+            <img src={dummyimage} className="w-[55px] object-contain" alt="Profile" />
           </div>
           
-        
+          {isDropdownOpen && (
+            <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-20">
+              <button
+                onClick={handleLogout}
+                className="w-full text-left px-4 py-2 text-gray-800 hover:bg-orange-500 hover:text-white transition-colors duration-200"
+              >
+                Logout
+              </button>
+            </div>
+          )}
+        </div>
       </span>
     </nav>
   )
