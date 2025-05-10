@@ -9,7 +9,7 @@ import Button from '../../../Components/Button.jsx';
 import oricon from '../../../assets/images/oricon.png';
 import Google from '../../../assets/images/Google.png';
 import { Link } from 'react-router-dom';
-import axios from '../../hooks/useAxios'; // your custom Axios instance
+import axios from '../../../hooks/useAxios.js'; // your custom Axios instance
 
 
 export default function Registrationloginpage({ mode }) {
