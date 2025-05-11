@@ -3,8 +3,7 @@ import clsx from 'clsx'
 import Button from '../../../Components/Button.jsx'
 import locationicon2 from '../../../assets/images/locationicon2.png'
 import Prescriptionicon from '../../../assets/images/Prescriptionicon.png'
-import uploadicon from '../../../assets/images/uploadicon.png'
-
+import uploadicon from '../../../assets/images/uploadicon.png' 
 
 export default function ordertrack() {
 
