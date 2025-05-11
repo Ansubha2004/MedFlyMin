@@ -1,0 +1,20 @@
+[{
+    "pharmacy": "Apollo Pharmacy",
+    "distance": "0.7",
+    "deliverytime": "15"
+},
+{
+    "pharmacy": "Life Line",
+    "distance": "0.8",
+    "deliverytime": "17"
+},
+{
+    "pharmacy": "Honululu Pharmacy",
+    "distance": "0.5",
+    "deliverytime": "7"
+},
+{
+    "pharmacy": "Medplus",
+    "distance": "1.0",
+    "deliverytime": "20"
+}]

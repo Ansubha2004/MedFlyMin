@@ -21,7 +21,8 @@ export default function Button({ content, theme, specification, additionalcss,li
         s1: 'min-w-[200px] h-[50px]  rounded-[16px]',
         s2: 'min-w-[380px] h-[70px] text-[24px] rounded-[16px]',
         s3: 'min-w-full h-[50px] text-[21px] rounded-[8px] ',
-        s4: 'h-[90%] rounded-l-full rounded-r-full w-1/5'
+        s4: 'h-[90%] rounded-l-full rounded-r-full w-1/5',
+        s5: 'w-[137px] h-[55px] rounded-[16px]'
     }
 
     //js\

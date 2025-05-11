@@ -21,15 +21,15 @@ export default function ordertrack() {
       </div>
       <br/>
     
-      <div className="w-full flex flex-wrap justify-evenly items-start gap-6 p-4">
+      <div className="w-full flex  justify-between items-center gap-6 p-4">
       {[
         "Upload a photo of your prescription",
         "Add your delivery address and place the order",
         "Your nearest pharmacy will call you to confirm the order",
         "Your medicines will get delivered within minutes"
         ].map((content, index) => (
-        <div key={index} className="flex flex-col items-center max-w-[200px] text-center">
-            <div className="h-[70px] w-[70px] rounded-full bg-orange-200 text-[#F2630A] border-[1px] border-solid border-[#00000030] font-semibold text-[27px] flex justify-center items-center mb-2 hover:scale-[1.1] hover:border-orange-600 transition-all duration-200 ease-out">
+        <div key={index} className="flex items-center  max-w-[350px] ">
+            <div className="min-h-[50px] min-w-[50px] rounded-full bg-orange-200 text-[#F2630A] border-[1px] border-solid border-[#00000030] font-semibold text-[27px] flex justify-center items-center mr-7 hover:scale-[1.1] hover:border-orange-600 transition-all duration-200 ease-out">
                 {index + 1}
             </div>
              <p className="text-[14px]">{content}</p>
@@ -37,7 +37,7 @@ export default function ordertrack() {
         ))}
        </div>
        <br/>
-       <br/>
+       
     </div>
   )
 }

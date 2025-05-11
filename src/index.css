@@ -23,3 +23,33 @@ body, html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;    /* Firefox */
 }
+
+
+/* Scroll animation */
+
+.scroll-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 2rem; /* Matches Tailwind's gap-10 */
+  animation: scroll-left 10s linear infinite;
+  width: max-content;
+}
+
+.scroll-wrapper:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
