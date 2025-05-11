@@ -1,6 +1,6 @@
 import React from 'react'
 import Inputbox2 from '../../../Components/Inputbox2.jsx'
-import Searchicon from '../../../assets/images/searchicon.png'
+import Searchicon from '../../../assets/images/Searchicon.png'
 
 export default function section1() {
   return (
