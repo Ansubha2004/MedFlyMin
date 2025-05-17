@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col min-h-screen">
         <Navbar/>
-        <main className=" flex-1 w-full max-w-full overflow-x-hidden">
+        <main className=" flex-1 w-full max-w-full overflow-x-hidden bg-[#FFF2E9]">
             <Welcomepage/>
             <Advantage/>
             <Howitworks/>

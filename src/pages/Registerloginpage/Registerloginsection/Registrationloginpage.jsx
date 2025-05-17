@@ -85,13 +85,12 @@ export default function Registrationloginpage({ mode }) {
   const checkboxStyle = "w-[20px] h-[20px] rounded-[3px] mr-[10px]";
 
   return (
-    <div className="relative z-[4] h-full w-full flex flex-col justify-center items-center scale-[0.8]">
-      <br />
-      <br />
-      <p className="text-[40px] font-[700]">
+    <div className="absolute z-[4] h-screen sm:h-full w-full flex flex-col  border-box  items-center sm:mt-[48px] sm:scale-[0.8]  overflow-hidden overscroll-none">
+     
+      <p className="text-[25px] sm:text-[40px] font-[700]">
         {mode === "register" ? "Create Your Account" : "Log In to Your Account"}
       </p>
-      <p className="text-[24px] font-[600]">
+      <p className="text-[14px] sm:text-[24px] font-[600]">
         or{" "}
         <Link
           className="text-[#F2630A]"
@@ -103,8 +102,8 @@ export default function Registrationloginpage({ mode }) {
         </Link>
       </p>
 
-      <form onSubmit={mode === "register" ? handleRegister : handleLogin}>
-        <div className="w-[500px] h-auto p-[30px] bg-[#FFFFFF] rounded-[20px] shadow-[0px_0px_35px_0px_rgba(0,0,0,0.35)]  mt-6">
+      <form className="flex justify-center items-center" onSubmit={mode === "register" ? handleRegister : handleLogin}>
+        <div className="w-[90%]  sm:w-[500px] h-auto p-[30px] bg-[#FFFFFF] rounded-[20px] shadow-[0px_0px_35px_0px_rgba(0,0,0,0.35)]  mt-6">
           {mode === "register" ? (
             <>
               <Inputbox
@@ -220,7 +219,7 @@ export default function Registrationloginpage({ mode }) {
               </button>
             </>
           )}
-          <img src={oricon} className="w-full my-[20px]" alt="or separator" />
+          <img src={oricon} className="w-full my-2 sm:my-[20px]" alt="or separator" />
           <Button
             content={
               mode === "register"

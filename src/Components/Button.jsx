@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom';
 export default function Button({ content, theme, specification, additionalcss,link,icon,iconcss}) {
 
     //tailwindcss
-    const common=`flex justify-center items-center  cursor-pointer transition-all active:scale-[0.95] duration-100 ease-in`;
+    const common=`flex justify-center items-center  cursor-pointer transition-all sm:active:scale-[0.95] duration-100 ease-in`;
 
     const designs={
         'themeblack': 'bg-black text-white shadow-[2px_4px_16px_3px_rgba(0,0,0,0.28)]',
