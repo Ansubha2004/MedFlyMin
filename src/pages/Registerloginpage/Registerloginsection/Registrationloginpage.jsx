@@ -130,7 +130,7 @@ export default function Registrationloginpage({ mode }) {
                 id="Phone"
                 type="tel"
                 icon={<Phone size={20} />}
-                placeholder="eg: 1234567890"
+                placeholder="eg: 9845729646"
                 ref={phoneNumberRef}
                 mode="register"
               />

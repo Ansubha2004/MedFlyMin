@@ -26,7 +26,7 @@ export default function Orderpage() {
         <div className="box-border px-[50px]  w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {
           ["Fever & Cold","Diabetes Care","Health & BP Care","Sexual Wellness","Personal Care","Pain Relief","Digestive Health"].map((content, index) => (
-            <div key={index} className="min-h-[60px] flex justify-center items-center rounded-[8px] border-solid border-[1px] border-black hover:scale-[1.01] active:scale-[0.99] transition-all duration-100 linear">
+            <div key={index} className="min-h-[40px] flex justify-center items-center rounded-[8px] border-solid border-[1px] border-black hover:scale-[1.01] active:scale-[0.99] transition-all duration-100 linear">
              <p className="text-lg font-medium ">{content}</p>
             </div>
           ))
