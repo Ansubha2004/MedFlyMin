@@ -14,15 +14,16 @@ export default function Problem() {
             <br/>
             <br/>
             <div id="Heading" className="w-full h-auto flex flex-col justify-center items-center">
-                    <p className="leading-snug text-[52px] font-[700] text-center">We Understand Your<br/><span className="text-[#F2630A]">Problem!</span></p>
+                    <p className="leading-tight sm:leading-snug text-[33px] sm:text-[52px] font-[700] text-center">We Understand Your<br/><span className="text-[#F2630A]">Problem!</span></p>
                     <br/>
+                    <p className="sm:hidden text-center  text-[18px]] leading-[25px]  text-[#4D4D4D] border-box px-5">Challenges faced by customers and pharmacies in the current medicine delivery ecosystem</p>
                     <br/>
                     <br/>
             </div>
-            <div className="w-full flex flex-wrap justify-center items-center ">
+            <div className="w-full flex flex-col sm:flex-row sm:flex-wrap justify-center items-center ">
                 {
                     [0,1,2,3].map((box,index)=>(
-                        <div key={index} className="w-[43%] flex justify-center">
+                        <div key={index} className="w-full sm:w-[43%] flex justify-center sm:items-start">
                             <Sloganbox extracss="bg-white" heading={heading[index]} body={body[index]} page="problem" index={index}/> 
                         </div>
                     ))

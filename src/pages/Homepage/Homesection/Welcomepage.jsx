@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import clsx from 'clsx';
 import {Link} from 'react-router-dom';
 import background1 from '../../../assets/designcomponents/background1.png'
@@ -9,6 +9,7 @@ import deliveryicon from '../../../assets/images/deliveryicon.png'
 import locationicon from '../../../assets/images/locationicon.png'
 import tagline from '../../../assets/images/tagline.png'
 import backgroundmobile1 from '../../../assets/designcomponents/backgroundmobile1.png'
+import {checkscreenwidth} from '../../../hooks/checkscreenwidth.jsx';
 
 
 
@@ -22,11 +23,8 @@ export default function Welcomepage() {
     //js
     const icons=[tickicon,deliveryicon,locationicon];
     const icontext=['Verified Medicines','Delivery within hours','Local Pharmacies'];
-    const [width,setwidth]=useState(window.innerWidth);
-    useEffect(()=>{
-        setwidth(window.innerWidth);
-    }
-    ,[]);
+
+
 
 
   return (
@@ -42,7 +40,7 @@ export default function Welcomepage() {
                     <br/><br/>
                     <p className="text-center sm:text-left text-[18px] sm:text-[32px] leading-[25px] sm:leading-[36px] mt-13 sm:mt-0 text-white sm:text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
                     <br/><br/>
-                    <Button content="Log In to order now →" theme={(width>=640)?"themeorange":"themewhitemobile"} specification="s2" additionalcss="mb-[15px] active:bg-orange-600 scale-[0.8] sm:scale-[1]" link="/login"/>
+                    <Button content="Log In to order now →" theme={(checkscreenwidth()>=640)?"themeorange":"themewhitemobile"} specification="s2" additionalcss="mb-[15px] active:bg-orange-600 scale-[0.8] sm:scale-[1]" link="/login"/>
                     <Button content="Register Now →" specification="s2" theme="themewhite" additionalcss="border-solid border-black border-[1px] scale-[0.8] mt-[-5px] sm:mt-0 sm:scale-[1]" link="/register"/>
                     <br/>
                     <br/>
