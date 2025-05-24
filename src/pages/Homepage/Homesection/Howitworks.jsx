@@ -31,7 +31,7 @@ export default function Howitworks() {
             
             <p className="text-[20px] sm:text-[36px] font-[600] sm:mt-[48px] sm:mb-[24px]  z-[1]">Need Medicines Now?</p>
             
-            <Button content="Place Your Order Now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 z-[1] sm:scale-[1] scale-[0.7]" link="/orderpage" />
+            <Button content="Place Your Order Now →" theme="themeorange" specification="s2" additionalcss="mb-[15px] active:bg-orange-600 z-[1] sm:scale-[1] scale-[0.8]" link="/orderpage" />
             <br/>
             <br/>
         </div>

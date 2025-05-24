@@ -36,11 +36,11 @@ export default function Welcomepage() {
                     <br/>
                     <img src={tagline} className="sm:hidden w-[220px] object-contain mt-3 "/>
                     <br/>
-                    <p className="leading-tight sm:leading-snug text-[35px] sm:text-[52px] text-center sm:text-left font-bold sm:font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Hours</p>
+                    <p className="leading-tight sm:leading-snug text-[32px] sm:text-[52px] text-center sm:text-left font-bold sm:font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Hours</p>
                     <br/><br/>
-                    <p className="text-center sm:text-left text-[18px] sm:text-[32px] leading-[25px] sm:leading-[36px] mt-13 sm:mt-0 text-white sm:text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
+                    <p className="text-center sm:text-left text-[16px] sm:text-[32px] leading-[25px] sm:leading-[36px] mt-13 sm:mt-0 text-white sm:text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
                     <br/><br/>
-                    <Button content="Log In to order now →" theme={(checkscreenwidth()>=640)?"themeorange":"themewhitemobile"} specification="s2" additionalcss="mb-[15px] active:bg-orange-600 scale-[0.8] sm:scale-[1]" link="/login"/>
+                    <Button content="Log In to order now →" theme={(checkscreenwidth()>=640)?"themeorange":"themewhitemobile"} specification="s2" additionalcss="mb-[15px] active:bg-orange-100 active:text-white scale-[0.8] sm:scale-[1]" link="/login"/>
                     <Button content="Register Now →" specification="s2" theme="themewhite" additionalcss="border-solid border-black border-[1px] scale-[0.8] mt-[-5px] sm:mt-0 sm:scale-[1]" link="/register"/>
                     <br/>
                     <br/>
@@ -55,7 +55,7 @@ export default function Welcomepage() {
                                     <div className={clsx(iconcase)}>
                                         <img src={icon} className={clsx(iconsize)} alt="delivery icon"/>
                                     </div>
-                                    <p className=" drop-shadow-[1px_2px_2px_rgba(0,0,0,0.25)] text-[15px] text-center sm:text-[25px] text-white sm:text-black">{icontext[index]}</p>
+                                    <p className=" drop-shadow-[1px_2px_2px_rgba(0,0,0,0.25)] text-[18px] font-[300] sm:font-[100] text-center sm:text-[25px] text-white sm:text-black">{icontext[index]}</p>
                                 </div>
                             ))
                         }  
