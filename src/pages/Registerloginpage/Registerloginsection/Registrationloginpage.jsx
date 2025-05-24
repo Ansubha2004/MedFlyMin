@@ -85,9 +85,9 @@ export default function Registrationloginpage({ mode }) {
   const checkboxStyle = "w-[20px] h-[20px] rounded-[3px] mr-[10px]";
 
   return (
-    <div className="absolute z-[4] h-screen sm:h-full w-full flex flex-col  border-box  items-center sm:mt-[48px] sm:scale-[0.8]  overflow-hidden overscroll-none">
+    <div className="relative flex flex-col sm:justify-center items-center z-[3] scale-[0.95] sm:scale-[0.9] border-box px-5">
      
-      <p className="text-[25px] sm:text-[40px] font-[700]">
+      <p className="text-[25px] sm:text-[40px] font-[700] sm:mt-10">
         {mode === "register" ? "Create Your Account" : "Log In to Your Account"}
       </p>
       <p className="text-[14px] sm:text-[24px] font-[600]">
@@ -101,9 +101,9 @@ export default function Registrationloginpage({ mode }) {
             : "Create a new Account"}
         </Link>
       </p>
-
-      <form className="flex justify-center items-center" onSubmit={mode === "register" ? handleRegister : handleLogin}>
-        <div className="w-[90%]  sm:w-[500px] h-auto p-[30px] bg-[#FFFFFF] rounded-[20px] shadow-[0px_0px_35px_0px_rgba(0,0,0,0.35)]  mt-6">
+     
+      <form className="flex justify-center items-center mt-3" onSubmit={mode === "register" ? handleRegister : handleLogin}>
+        <div className="bg-white border-box sm:w-[500px] sm:scale-[0.9] rounded-[20px] p-7 sm:p-10 ">
           {mode === "register" ? (
             <>
               <Inputbox
@@ -153,9 +153,9 @@ export default function Registrationloginpage({ mode }) {
               />
               <label
                 htmlFor="rememberRegister"
-                className="flex justify-between items-center font-[Inter] text-[18px] my-[15px]"
+                className="flex justify-between items-center font-[Inter] text-[18px] sm:my-[15px]"
               >
-                <div className="flex items-center">
+                <div className="flex items-center text-[12px] sm:text-lg">
                   <input
                     type="checkbox"
                     id="rememberRegister"
@@ -164,7 +164,7 @@ export default function Registrationloginpage({ mode }) {
                   />
                   Remember Me
                 </div>
-                <a href="#" className="text-[#F2630A]">
+                <a href="#" className="text-[12px] sm:text-lg text-[#F2630A]">
                   Forgot Your Password?
                 </a>
               </label>
@@ -197,15 +197,15 @@ export default function Registrationloginpage({ mode }) {
               />
               <label
                 htmlFor="termsLogin"
-                className="flex items-center font-[Inter] text-[18px] my-[15px]"
+                className="flex sm:items-center font-[Inter] text-[18px] my-[15px] mt-6"
               >
                 <input
                   type="checkbox"
                   id="termsLogin"
-                  className={clsx(checkboxStyle)}
+                  className={clsx(checkboxStyle,"relative top-1 sm:top-auto")}
                   required
                 />
-                <p>
+                <p className="sm:text-lg text-[15px]">
                   I agree to the{" "}
                   <span className="text-orange-500">Terms of Services</span> and{" "}
                   <span className="text-orange-500">Privacy Policy</span>
