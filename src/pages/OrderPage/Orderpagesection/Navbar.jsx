@@ -36,7 +36,7 @@ export default function Navbar() {
   const hoverbuttons = 'hover:text-[#F2630A] hover:scale-[1.05] active:scale-[0.95] border-b-[2px] border-transparent hover:border-[#F2630A] transition-all duration-200 ease-out';
 
   return (
-    <nav className="sm:relative fixed z-[2] bg-[#F5F5F5]  sm:bg-transparent font-[Inter] w-full flex justify-between items-center px-5 sm:px-8 py-2 sm:border-b sm:border-black/60">
+    <nav className="roboto-font sm:relative fixed z-[2] bg-[#F5F5F5]  sm:bg-transparent font-[Inter] w-full flex justify-between items-center px-5 sm:px-8 py-2 sm:border-b sm:border-black/60">
       <div className="flex items-center gap-6">
         <img src="/logo.png" alt="Logo" className="h-[60px] sm:h-[75px]" />
         <Button 

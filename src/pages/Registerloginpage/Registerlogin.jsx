@@ -14,7 +14,7 @@ export default function Register() {
   return (
     <>
         <Navbar mode={mode}/>
-        <div className="relative w-screen min-h-screen sm:max-h-screen flex justify-center border-box pt-15 sm:pt-0 sm:items-center bg-[#FFF2E9] ">
+        <div className="inter-font relative w-screen min-h-screen sm:max-h-screen flex justify-center border-box pt-15 sm:pt-0 sm:items-center bg-[#FFF2E9] ">
             <Registrationloginpage mode={mode}/>
            
         </div>

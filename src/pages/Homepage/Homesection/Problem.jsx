@@ -35,7 +35,7 @@ export default function Problem() {
             <br/>
             <img src={problemmobilebg} className="w-full object-contain sm:hidden absolute top-[-55px] z-[2]" />
          </div>
-         <img src={blurshade5} className="w-full object-contain sm:hidden absolute bottom-[600px] z-[2]" />
+         <img src={blurshade5} className="w-full object-contain sm:hidden absolute bottom-[900px] z-[2]" />
 
     </>
   )

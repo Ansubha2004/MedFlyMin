@@ -7,7 +7,7 @@ import uploadicon from "../../../assets/images/uploadicon.png";
 
 export default function ordertrack() {
   return (
-    <div className="w-full h-auto flex flex-col  items-center">
+    <div className="roboto-font w-full h-auto flex flex-col  items-center">
       <div className="w-full h-auto flex justify-between items-center mb-[24px]">
         <div
           id="prescription"
@@ -48,7 +48,7 @@ export default function ordertrack() {
         />
       </div>
 
-      <div className="w-full hidden my-[24px] sm:flex  justify-between items-center gap-6 p-4">
+      <div className="roboto-font w-full hidden my-[24px] sm:flex  justify-between items-center gap-6 p-4">
         {[
           "Upload a photo of your prescription",
           "Add your delivery address and place the order",
