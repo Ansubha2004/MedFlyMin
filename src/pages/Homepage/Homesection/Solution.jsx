@@ -9,7 +9,7 @@ export default function Solution() {
 
   return (
     <>
-         <div className="w-full h-auto relative flex flex-col justify-center items-center overflow-hidden ">
+         <div className="z-[2] w-full h-auto relative flex flex-col justify-center items-center overflow-hidden ">
             <br/>
             <br/>
             <div id="Heading" className="w-full h-auto flex flex-col justify-center items-center">
