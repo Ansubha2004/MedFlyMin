@@ -48,7 +48,7 @@ export default function ordertrack() {
         />
       </div>
 
-      <div className="w-full hidden mt-[24px] sm:flex  justify-between items-center gap-6 p-4">
+      <div className="w-full hidden my-[24px] sm:flex  justify-between items-center gap-6 p-4">
         {[
           "Upload a photo of your prescription",
           "Add your delivery address and place the order",
