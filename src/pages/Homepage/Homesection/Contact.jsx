@@ -27,7 +27,7 @@ export default function Contact() {
           <div className="w-[100px] hidden sm:block h-[4px] bg-[#F2630A] sm:mb-[24px]"></div>
           <br />
         </div>
-        <form className=" sm:w-[50%] flex flex-col justify-center items-start ">
+        <form className=" sm:w-[50%] flex flex-col justify-center items-start sm:items-center ">
           <Inputbox3
             label="Enter Full Name"
             id="Name"
