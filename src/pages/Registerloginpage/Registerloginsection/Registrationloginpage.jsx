@@ -94,7 +94,7 @@ export default function Registrationloginpage({ mode }) {
         or{" "}
         <Link
           className="text-[#F2630A]"
-          to={mode === "register" ? "/login" : "/register"}
+          to={(mode === "register") ? "/login" : "/register"}
         >
           {mode === "register"
             ? "Login to your existing account"
@@ -152,25 +152,24 @@ export default function Registrationloginpage({ mode }) {
                 mode="register"
               />
               <label
-                htmlFor="rememberRegister"
-                className="flex justify-between items-center font-[Inter] text-[18px] sm:my-[15px]"
+                htmlFor="termsLogin"
+                className="flex sm:items-center font-[Inter] text-[18px] my-[15px] mt-6"
               >
-                <div className="flex items-center text-[12px] sm:text-lg">
-                  <input
-                    type="checkbox"
-                    id="rememberRegister"
-                    className={clsx(checkboxStyle)}
-                    required
-                  />
-                  Remember Me
-                </div>
-                <a href="#" className="text-[12px] sm:text-lg text-[#F2630A]">
-                  Forgot Your Password?
-                </a>
+                <input
+                  type="checkbox"
+                  id="termsLogin"
+                  className={clsx(checkboxStyle,"relative top-1 sm:top-auto")}
+                  required
+                />
+                <p className="sm:text-lg text-[12px]">
+                  I agree to the{" "}
+                  <span className="text-orange-500">Terms of Services</span> and{" "}
+                  <span className="text-orange-500">Privacy Policy</span>
+                </p>
               </label>
               <button
                 type="submit"
-                className="w-full mt-[25px] bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg"
+                className="w-full mt-[10px] bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg"
               >
                 Create Account →
               </button>
@@ -196,24 +195,26 @@ export default function Registrationloginpage({ mode }) {
                 mode="login"
               />
               <label
-                htmlFor="termsLogin"
-                className="flex sm:items-center font-[Inter] text-[18px] my-[15px] mt-6"
+                htmlFor="rememberRegister"
+                className="flex justify-between items-center font-[Inter] text-[18px] sm:my-[15px]"
               >
-                <input
-                  type="checkbox"
-                  id="termsLogin"
-                  className={clsx(checkboxStyle,"relative top-1 sm:top-auto")}
-                  required
-                />
-                <p className="sm:text-lg text-[15px]">
-                  I agree to the{" "}
-                  <span className="text-orange-500">Terms of Services</span> and{" "}
-                  <span className="text-orange-500">Privacy Policy</span>
-                </p>
+                <div className="flex items-center text-[12px] sm:text-lg">
+                  <input
+                    type="checkbox"
+                    id="rememberRegister"
+                    className={clsx(checkboxStyle)}
+                    required
+                  />
+                  Remember Me
+                </div>
+                <a href="#" className="text-[12px] sm:text-lg text-[#F2630A]">
+                  Forgot Your Password?
+                </a>
               </label>
+              
               <button
                 type="submit"
-                className="w-full mt-[25px] bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg"
+                className="w-full mt-[25px] bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg"
               >
                 Log In →
               </button>

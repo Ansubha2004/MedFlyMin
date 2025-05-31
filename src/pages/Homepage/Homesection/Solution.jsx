@@ -27,7 +27,7 @@ export default function Solution() {
                     ))
                 }
             </div>
-            
+            <br />
          </div>
     </>
   )

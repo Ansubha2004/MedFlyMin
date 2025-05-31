@@ -23,7 +23,7 @@ export default function Navbar({mode}) {
     
 
   return (
-    <nav className="inter-font  w-screen min-h-auto flex justify-between items-center box-border sm:pl-[25px] sm:pr-[67px] pr-[20px] absolute z-[10]">
+    <nav className="inter-font  w-screen min-h-auto flex justify-between items-center box-border sm:pl-[25px] sm:pr-[67px] pr-[20px] absolute z-[2]">
       <img src="/logo.png" className="h-[60px] sm:mx-[25px] sm:my-[20px] sm:h-[94px]" />
       <ul className="text-[25px] font-[Inter] font-[500] space-x-[44px] flex items-center justify-center">
         <Link onClick={reload} className={clsx(hoverbuttons,"font-bold hidden sm:block")} to={`/${mode=="register"?'login':'register'}`}>{mode=="register"?"Login":"Sign Up"}</Link>
