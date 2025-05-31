@@ -27,7 +27,7 @@ export default function Contact() {
           <div className="w-[100px] hidden sm:block h-[4px] bg-[#F2630A] sm:mb-[24px]"></div>
           <br />
         </div>
-        <form className=" sm:w-[50%] flex flex-col justify-center items-start sm:items-center ">
+        <form className=" w-[90%] flex flex-col justify-center items-center ">
           <Inputbox3
             label="Enter Full Name"
             id="Name"
@@ -53,6 +53,7 @@ export default function Contact() {
             additionalcss="h-[150px] items-start pt-[15px]"
            
           />
+          <br />
           <Button theme="themeorange" content="Submit" specification="s6" />
         </form>
       </div>
