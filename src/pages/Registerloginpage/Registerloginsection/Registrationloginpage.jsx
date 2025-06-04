@@ -39,6 +39,14 @@ export default function Registrationloginpage({ mode }) {
       return;
     }
 
+    // Log the data being sent
+    console.log("Registration data:", {
+      name,
+      email,
+      password,
+      phoneNumber,
+    });
+
     try {
       const res = await axios.post(
         `${import.meta.env.VITE_REACT_APP_API_URL}/auth/register`,
@@ -49,10 +57,12 @@ export default function Registrationloginpage({ mode }) {
           phoneNumber,
         }
       );
+      console.log("Registration response:", res.data);
       toast.success(res.data.message || "Registration successful");
       navigate("/orderpage");
     } catch (err) {
-      toast.error(err.response?.data?.message || "Something went wrong");
+      console.error("Registration error:", err.response?.data);
+      toast.error(err.response?.data?.error || "Something went wrong");
     }
   };
 
@@ -235,8 +245,19 @@ export default function Registrationloginpage({ mode }) {
         </div>
       </form>
 
-      <ToastContainer position="top-right" autoClose={3000} />
-      {message && <p className="mt-4 text-red-600">{message}</p>}
+           <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      {message && <p className="mt-2 text-red-600">{message}</p>}
     </div>
   );
 }

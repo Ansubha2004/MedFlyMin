@@ -4,7 +4,7 @@ import {useNavigate} from 'react-router-dom';
 
 
 
-export default function Button({ content, theme, specification, additionalcss,link,icon,iconcss}) {
+export default function Button({ content, theme, specification, additionalcss,link,icon,iconcss,onClick}) {
 
     //tailwindcss
     const common=`flex justify-center items-center  cursor-pointer transition-all active:scale-[0.85] sm:active:scale-[0.95] duration-100 ease-in`;
@@ -28,21 +28,28 @@ export default function Button({ content, theme, specification, additionalcss,li
     }
 
     //js\
-    const navigate=useNavigate();
-    const handleclick=(e)=>{
-      e.preventDefault();
-      if(link)
-      {
-        setTimeout(()=>{
-          navigate(link);
-        },"900");
-      }
+    const navigate = useNavigate();
+
+  const handleclick = (e) => {
+    if (onClick) {
+      onClick(e); // 👈 Trigger custom click (like file upload)
     }
 
+    if (link) {
+      e.preventDefault();
+      setTimeout(() => {
+        navigate(link);
+      }, 900);
+    }
+  };
+
   return (
-    <button onClick={handleclick } className={clsx(common,designs[theme], specifications[specification],additionalcss)}>
+    <button
+      onClick={handleclick}
+      className={clsx(common, designs[theme], specifications[specification], additionalcss)}
+    >
       {content}
       <img src={icon} className={clsx(iconcss)} />
     </button>
-  )
+  );
 }

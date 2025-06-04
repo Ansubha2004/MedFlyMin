@@ -3,6 +3,7 @@ import Button from "../../../Components/Button.jsx";
 import clsx from "clsx";
 import { IoMdMenu } from "react-icons/io";
 
+
 export default function Navbar() {
   const hoverbuttons =
     "hover:text-[#F2630A] active:text-[#F2630A] hover:scale-[1.05] active:scale-[0.95] border-b-[2px] border-transparent hover:border-[#F2630A] transition-all duration-200 ease-out";
