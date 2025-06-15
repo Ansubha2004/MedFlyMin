@@ -6,6 +6,7 @@ import Howitworks from './Homesection/Howitworks.jsx';
 import Problem from './Homesection/Problem.jsx';
 import Solution from './Homesection/Solution.jsx';
 import Contact from './Homesection/Contact.jsx';
+import Footer from './Homesection/Footer.jsx';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
             <Solution/>
             <Contact/>
         </main>
+        <Footer />
     </div>
   )
 }
