@@ -22,7 +22,7 @@ export default function Welcomepage() {
 
     //js
     const icons=[tickicon,deliveryicon,locationicon];
-    const icontext=['Verified Medicines','Delivery within hours','Local Pharmacies'];
+    const icontext=['Verified Medicines','Instant Medicine Finder','Local Delivery Within mins'];
 
 
 
@@ -36,11 +36,11 @@ export default function Welcomepage() {
                     <br/>
                     <img src={tagline} className="sm:hidden w-[220px] object-contain mt-3 "/>
                     <br/>
-                    <p className="leading-tight sm:leading-snug text-[32px] sm:text-[52px] text-center sm:text-left font-bold sm:font-[700]"><span className="text-[#F2630A]">Medicines Delivered</span> In Minutes, Not Hours</p>
+                    <p className="leading-tight sm:leading-snug text-[32px] sm:text-[48px] text-center sm:text-left font-bold sm:font-[700]"><span className="text-[#F2630A]">Find & Get Medicines Delivered</span> In Minutes, Not Hours</p>
                     <br/><br/>
-                    <p className="text-center sm:text-left text-[16px] sm:text-[32px] leading-[25px] sm:leading-[36px] mt-13 sm:mt-0 text-white sm:text-[#4D4D4D]">Connecting you with local pharmacies for faster access to essential medications.</p>
+                    <p className="text-center sm:text-left text-[16px] sm:text-[30px] leading-[25px] sm:leading-[30px] mt-13 sm:mt-0 text-white sm:text-[#4D4D4D]">Instantly connect with nearby pharmacies to get essential medicines—faster and stress-free.</p>
                     <br/><br/>
-                    <Button content="Log In to order now →" theme={(checkscreenwidth()>=640)?"themeorange":"themewhitemobile"} specification="s2" additionalcss="mb-[15px] active:bg-orange-100 active:text-white   " link="/login"/>
+                    <Button content="Log in to find & order now →" theme={(checkscreenwidth()>=640)?"themeorange":"themewhitemobile"} specification="s2" additionalcss="mb-[15px] active:bg-orange-100 active:text-white   " link="/login"/>
                     <Button content="Register Now →" specification="s2" theme="themewhite" additionalcss="border-solid border-black border-[1px]  mt-[-5px] sm:mt-0 " link="/register"/>
                     <br/>
                     <br/>

@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <nav className="fixed sm:absolute z-[10] w-full">
       <div className="bg-white/90 sm:bg-transparent font-[Inter] w-full max-h-auto sm:min-h-auto flex justify-between items-center box-border px-4  sm:px-8 sm:py-4 ">
-        <img src="/logo.png" className="h-[60px] sm:h-[94px]" alt="Logo" />
+        <img src="/toplogo.png" className="h-[60px] sm:h-[120px]" alt="Logo" />
         {/* Nav Links (Desktop) */}
         <ul className="hidden  text-[25px] font-[Inter] font-[500] space-x-[44px] sm:flex items-center justify-center">
           <button
